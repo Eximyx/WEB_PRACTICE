@@ -126,6 +126,31 @@
 }
 
 
-.text-secondary-light {
+.text-color-secondary-light {
     color: #2D4872 !important;
+}
+
+.text-color-secondary {
+    color: #2D4872 !important;
+}
+
+.bg-color-primary {
+    --bs-bg-opacity: 1;
+    background-color: var(--color-primary) !important;
+}
+
+.border-color-primary {
+    border-color: var(--color-primary) !important;
+}
+
+@media (min-width: 420px) {
+    .main-title {
+        font-size: 34px !important;
+    }
+}
+
+@media (min-width: 1200px) {
+    .main-title {
+        font-size: 60px !important;
+    }
 }
