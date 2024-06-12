@@ -12,13 +12,20 @@
           rel="stylesheet">
     <title>Title</title>
     <link href="https://fonts.googleapis.com/css2?family=Saira+Stencil+One&display=swap" rel="stylesheet">
-
+    <script crossorigin="anonymous"
+            integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+            referrerpolicy="no-referrer"
+            src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <link crossorigin="anonymous" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
           integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
           referrerpolicy="no-referrer" rel="stylesheet"/>
 
     <link crossorigin="anonymous" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
           integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" rel="stylesheet">
+    <link
+            href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+            rel="stylesheet"
+    />
 </head>
 <body>
 
@@ -72,9 +79,9 @@
 
 <main>
     <section class="container mt-3" id="main_slider"
-             style="background-image: linear-gradient(to left, rgba(255,255,255,0%), rgba(255,255,255,100%)), url('../img/main/main-image.png');">
+             style="background-image: linear-gradient(to left, rgba(255,255,255,0%), rgba(255,255,255,100%)), url('../img/main/main-image.png'); background-size: cover;background-repeat: no-repeat">
         <div class="row p-0 pb-3">
-            <div class="col-12 col-lg-7 col-xl-8">
+            <div class="col-12 col-lg-7 col-xl-7">
                 <h1 class="col-md-8 roboto-bold main-title">
                     РЕМОНТ КВАРТИР
                     В МОСКВЕ
@@ -259,6 +266,425 @@
             </div>
         </div>
     </section>
+
+
+    <section class="container mt-5">
+        <h2 class="text-center roboto-bold mb-5">Цены на ремонт</h2>
+
+        <div class="swiper" id="swiper-prices">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+                <!-- Slides -->
+                <div class="swiper-slide">
+                    <div class="card m-0 mx-2 p-0" style="border-radius: 2em">
+                        <div class="card-header" style="border-radius: 2em 2em 0 0;background-color: #E3EAEF">
+                            <div class="row">
+                                <div class="col-auto px-2">
+                                    <img alt="Card image cap" class="rounded-circle img-thumbnail"
+                                         src="../img/main/builder.png">
+                                </div>
+                                <div class="col p-0 align-content-center">
+                                    <h5 class="m-0 roboto-bold text-color-primary">КОСМЕТИЧЕСКИЙ</h5>
+                                    <h6 class="m-0 roboto-bold">от 5 дней</h6>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-body justify-content-center">
+                            <p class="py-3 card-text border-bottom border-5" style="border-color:#2D4872">Такой
+                                тип
+                                ремонта подойдёт для
+                                того чтобы
+                                «освежить»
+                                ремонт в
+                                квартире:
+                                заменить покрытие стен, пола и потолка без предварительной подготовки</p>
+                            <div class="d-block">
+                                <h6 class="m-0 roboto-bold">Демонтаж</h6>
+                                <p class="mt-2 m-0">
+                                    <i class="fa fa-check"></i> Демонтаж старых покрытий
+                                </p>
+                                <p class="mb-2 m-0">
+                                    <i class="fa fa-check"></i> Демонтаж старых покрытий
+                                </p>
+                            </div>
+                            <div class="d-block my-3">
+                                <h6 class="m-0 roboto-bold">Черновые работы</h6>
+                                <p class="mt-2 m-0">
+                                    <i class="fa fa-check"></i> Грунтовка стен и пола
+                                </p>
+                                <p class="mt-2 m-0 text-muted">
+                                    <i class="fa fa-check"></i> Грунтовка стен и пола
+                                </p>
+                            </div>
+                            <div class="d-block">
+                                <h6 class="m-0 roboto-bold text-muted">Чистовые работы</h6>
+                            </div>
+                            <div class="row justify-content-center align-items-center mt-4">
+                                <h5 class="m-0 roboto-bold text-center text-color-secondary col-auto p-0 mx-2">Список
+                                    работ</h5>
+                                <i class="fa fa-arrow-down text-color-secondary col-auto font-weight-light fs-4 p-0"></i>
+                            </div>
+                            <div class="row justify-content-center align-items-center mt-1">
+                    <span class="m-0 p-0 col-auto text-decoration-line-through">
+                        от <strong class="m-0 p-0">3 245</strong> руб/м2
+                    </span>
+                                <span class="fs-5 col-auto roboto-bold text-color-primary">
+                        от 2 450 руб/м2
+                    </span>
+                            </div>
+                            <div class="row justify-content-center my-3">
+                                <button class="col-9 btn btn-primary px-2 roboto-bold py-2 fs-5" href="">Получить
+                                    смету
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="card m-0 mx-2 p-0" style="border-radius: 2em">
+                        <div class="card-header" style="border-radius: 2em 2em 0 0;background-color: #E3EAEF">
+                            <div class="row">
+                                <div class="col-auto px-2">
+                                    <img alt="Card image cap" class="rounded-circle img-thumbnail"
+                                         src="../img/main/builder.png">
+                                </div>
+                                <div class="col p-0 align-content-center">
+                                    <h5 class="m-0 roboto-bold text-color-primary">КОСМЕТИЧЕСКИЙ</h5>
+                                    <h6 class="m-0 roboto-bold">от 5 дней</h6>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-body justify-content-center">
+                            <p class="py-3 card-text border-bottom border-5" style="border-color:#2D4872">Такой
+                                тип
+                                ремонта подойдёт для
+                                того чтобы
+                                «освежить»
+                                ремонт в
+                                квартире:
+                                заменить покрытие стен, пола и потолка без предварительной подготовки</p>
+                            <div class="d-block">
+                                <h6 class="m-0 roboto-bold">Демонтаж</h6>
+                                <p class="mt-2 m-0">
+                                    <i class="fa fa-check"></i> Демонтаж старых покрытий
+                                </p>
+                                <p class="mb-2 m-0">
+                                    <i class="fa fa-check"></i> Демонтаж старых покрытий
+                                </p>
+                            </div>
+                            <div class="d-block my-3">
+                                <h6 class="m-0 roboto-bold">Черновые работы</h6>
+                                <p class="mt-2 m-0">
+                                    <i class="fa fa-check"></i> Грунтовка стен и пола
+                                </p>
+                                <p class="mt-2 m-0 text-muted">
+                                    <i class="fa fa-check"></i> Грунтовка стен и пола
+                                </p>
+                            </div>
+                            <div class="d-block">
+                                <h6 class="m-0 roboto-bold text-muted">Чистовые работы</h6>
+                            </div>
+                            <div class="row justify-content-center align-items-center mt-4">
+                                <h5 class="m-0 roboto-bold text-center text-color-secondary col-auto p-0 mx-2">Список
+                                    работ</h5>
+                                <i class="fa fa-arrow-down text-color-secondary col-auto font-weight-light fs-4 p-0"></i>
+                            </div>
+                            <div class="row justify-content-center align-items-center mt-1">
+                    <span class="m-0 p-0 col-auto text-decoration-line-through">
+                        от <strong class="m-0 p-0">3 245</strong> руб/м2
+                    </span>
+                                <span class="fs-5 col-auto roboto-bold text-color-primary">
+                        от 2 450 руб/м2
+                    </span>
+                            </div>
+                            <div class="row justify-content-center my-3">
+                                <button class="col-9 btn btn-primary px-2 roboto-bold py-2 fs-5" href="">Получить
+                                    смету
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="card m-0 mx-2 p-0" style="border-radius: 2em">
+                        <div class="card-header" style="border-radius: 2em 2em 0 0;background-color: #E3EAEF">
+                            <div class="row">
+                                <div class="col-auto px-2">
+                                    <img alt="Card image cap" class="rounded-circle img-thumbnail"
+                                         src="../img/main/builder.png">
+                                </div>
+                                <div class="col p-0 align-content-center">
+                                    <h5 class="m-0 roboto-bold text-color-primary">КОСМЕТИЧЕСКИЙ</h5>
+                                    <h6 class="m-0 roboto-bold">от 5 дней</h6>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-body justify-content-center">
+                            <p class="py-3 card-text border-bottom border-5" style="border-color:#2D4872">Такой
+                                тип
+                                ремонта подойдёт для
+                                того чтобы
+                                «освежить»
+                                ремонт в
+                                квартире:
+                                заменить покрытие стен, пола и потолка без предварительной подготовки</p>
+                            <div class="d-block">
+                                <h6 class="m-0 roboto-bold">Демонтаж</h6>
+                                <p class="mt-2 m-0">
+                                    <i class="fa fa-check"></i> Демонтаж старых покрытий
+                                </p>
+                                <p class="mb-2 m-0">
+                                    <i class="fa fa-check"></i> Демонтаж старых покрытий
+                                </p>
+                            </div>
+                            <div class="d-block my-3">
+                                <h6 class="m-0 roboto-bold">Черновые работы</h6>
+                                <p class="mt-2 m-0">
+                                    <i class="fa fa-check"></i> Грунтовка стен и пола
+                                </p>
+                                <p class="mt-2 m-0 text-muted">
+                                    <i class="fa fa-check"></i> Грунтовка стен и пола
+                                </p>
+                            </div>
+                            <div class="d-block">
+                                <h6 class="m-0 roboto-bold text-muted">Чистовые работы</h6>
+                            </div>
+                            <div class="row justify-content-center align-items-center mt-4">
+                                <h5 class="m-0 roboto-bold text-center text-color-secondary col-auto p-0 mx-2">Список
+                                    работ</h5>
+                                <i class="fa fa-arrow-down text-color-secondary col-auto font-weight-light fs-4 p-0"></i>
+                            </div>
+                            <div class="row justify-content-center align-items-center mt-1">
+                    <span class="m-0 p-0 col-auto text-decoration-line-through">
+                        от <strong class="m-0 p-0">3 245</strong> руб/м2
+                    </span>
+                                <span class="fs-5 col-auto roboto-bold text-color-primary">
+                        от 2 450 руб/м2
+                    </span>
+                            </div>
+                            <div class="row justify-content-center my-3">
+                                <button class="col-9 btn btn-primary px-2 roboto-bold py-2 fs-5" href="">Получить
+                                    смету
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="card m-0 mx-2 p-0" style="border-radius: 2em">
+                        <div class="card-header" style="border-radius: 2em 2em 0 0;background-color: #E3EAEF">
+                            <div class="row">
+                                <div class="col-auto px-2">
+                                    <img alt="Card image cap" class="rounded-circle img-thumbnail"
+                                         src="../img/main/builder.png">
+                                </div>
+                                <div class="col p-0 align-content-center">
+                                    <h5 class="m-0 roboto-bold text-color-primary">КОСМЕТИЧЕСКИЙ</h5>
+                                    <h6 class="m-0 roboto-bold">от 5 дней</h6>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-body justify-content-center">
+                            <p class="py-3 card-text border-bottom border-5" style="border-color:#2D4872">Такой
+                                тип
+                                ремонта подойдёт для
+                                того чтобы
+                                «освежить»
+                                ремонт в
+                                квартире:
+                                заменить покрытие стен, пола и потолка без предварительной подготовки</p>
+                            <div class="d-block">
+                                <h6 class="m-0 roboto-bold">Демонтаж</h6>
+                                <p class="mt-2 m-0">
+                                    <i class="fa fa-check"></i> Демонтаж старых покрытий
+                                </p>
+                                <p class="mb-2 m-0">
+                                    <i class="fa fa-check"></i> Демонтаж старых покрытий
+                                </p>
+                            </div>
+                            <div class="d-block my-3">
+                                <h6 class="m-0 roboto-bold">Черновые работы</h6>
+                                <p class="mt-2 m-0">
+                                    <i class="fa fa-check"></i> Грунтовка стен и пола
+                                </p>
+                                <p class="mt-2 m-0 text-muted">
+                                    <i class="fa fa-check"></i> Грунтовка стен и пола
+                                </p>
+                            </div>
+                            <div class="d-block">
+                                <h6 class="m-0 roboto-bold text-muted">Чистовые работы</h6>
+                            </div>
+                            <div class="row justify-content-center align-items-center mt-4">
+                                <h5 class="m-0 roboto-bold text-center text-color-secondary col-auto p-0 mx-2">Список
+                                    работ</h5>
+                                <i class="fa fa-arrow-down text-color-secondary col-auto font-weight-light fs-4 p-0"></i>
+                            </div>
+                            <div class="row justify-content-center align-items-center mt-1">
+                    <span class="m-0 p-0 col-auto text-decoration-line-through">
+                        от <strong class="m-0 p-0">3 245</strong> руб/м2
+                    </span>
+                                <span class="fs-5 col-auto roboto-bold text-color-primary">
+                        от 2 450 руб/м2
+                    </span>
+                            </div>
+                            <div class="row justify-content-center my-3">
+                                <button class="col-9 btn btn-primary px-2 roboto-bold py-2 fs-5" href="">Получить
+                                    смету
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- If we need pagination -->
+
+            <!-- If we need navigation buttons -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+
+            <!-- If we need scrollbar -->
+            <div class="swiper-scrollbar"></div>
+            <div class="swiper-pagination"></div>
+        </div>
+    </section>
+
+    <section class="container mt-5">
+        <h2 class="text-center roboto-bold mb-5">Примеры наших работ</h2>
+        <ul class="nav nav-tabs border-0 row" id="myTab" role="tablist">
+            <li class="nav-item col p-0" role="presentation">
+                <button aria-controls="home" aria-selected="true"
+                        class="text-nowrap w-100 m-0 py-2 my-2 nav-link active"
+                        data-bs-target="#capital"
+                        data-bs-toggle="tab"
+                        id="capital-tab" role="tab" type="button">Капитальный
+                </button>
+            </li>
+            <li class="nav-item col p-0 mx-1" role="presentation">
+                <button aria-controls="home" aria-selected="true" class="text-nowrap w-100 m-0 py-2 my-2 nav-link"
+                        data-bs-target="#cosmetic"
+                        data-bs-toggle="tab"
+                        id="cosmetic-tab" role="tab" type="button">Косметический
+                </button>
+            </li>
+            <li class="nav-item col p-0" role="presentation">
+                <button aria-controls="home" aria-selected="true" class="text-nowrap w-100 m-0 py-2 my-2 nav-link"
+                        data-bs-target="#key"
+                        data-bs-toggle="tab"
+                        id="key-tab" role="tab" type="button">Под ключ
+                </button>
+            </li>
+            <li class="nav-item col p-0 mx-1" role="presentation">
+                <button aria-controls="home" aria-selected="true" class="text-nowrap w-100 m-0 py-2 my-2 nav-link"
+                        data-bs-target="#studio"
+                        data-bs-toggle="tab"
+                        id="studio-tab" role="tab" type="button">Студии
+                </button>
+            </li>
+            <li class="nav-item col p-0" role="presentation">
+                <button aria-controls="home" aria-selected="true" class="text-nowrap w-100 m-0 py-2 my-2 nav-link"
+                        data-bs-target="#draft"
+                        data-bs-toggle="tab"
+                        id="draft-tab" role="tab" type="button">Черновой
+                </button>
+            </li>
+        </ul>
+        <div class="row my-3 justify-content-start justify-content-md-center">
+            <div class="col-auto">
+                <label class="form-check-label">
+                    <input checked class="form-check-input" name="rooms"
+                           type="radio"
+                           value="1">
+                    55 м2
+                </label>
+            </div>
+            <div class="col-auto">
+                <label class="form-check-label">
+                    <input checked class="form-check-input" name="rooms"
+                           type="radio"
+                           value="1">
+                    61 м2
+                </label>
+            </div>
+            <div class="col-auto">
+                <label class="form-check-label">
+                    <input checked class="form-check-input" name="rooms"
+                           type="radio"
+                           value="1">
+                    72 м2
+                </label>
+            </div>
+            <div class="col-auto">
+                <label class="form-check-label">
+                    <input checked class="form-check-input" name="rooms"
+                           type="radio"
+                           value="1">
+                    88 м2
+                </label>
+            </div>
+            <div class="col-auto">
+                <label class="form-check-label">
+                    <input checked class="form-check-input" name="rooms"
+                           type="radio"
+                           value="1">
+                    106 м2
+                </label>
+            </div>
+            <div class="col-auto">
+                <label class="form-check-label">
+                    <input checked class="form-check-input" name="rooms"
+                           type="radio"
+                           value="1">
+                    63 м2
+                </label>
+            </div>
+            <div class="col-auto">
+                <label class="form-check-label">
+                    <input checked class="form-check-input" name="rooms"
+                           type="radio"
+                           value="1">
+                    41 м2
+                </label>
+            </div>
+        </div>
+
+        <div class="tab-content" id="myTabContent">
+            <div aria-labelledby="capital-tab" class="tab-pane fade show active" id="capital" role="tabpanel">
+                <div class="row">
+                    <div class="swiper" id="swiper-works" type="worksSwiper">
+                        <!-- Additional required wrapper -->
+                        <div class="swiper-wrapper">
+                            <!-- Slides -->
+                        </div>
+                        <div class="swiper-slide">
+                            1
+                        </div>
+                        <div class="swiper-slide">
+                            1
+                        </div>
+                        <div class="swiper-slide">
+                            1
+                        </div>
+                        <div class="swiper-slide">
+                            1
+                        </div>
+                        <!-- If we need pagination -->
+
+                        <!-- If we need navigation buttons -->
+                        <div class="swiper-button-prev"></div>
+                        <div class="swiper-button-next"></div>
+
+                        <!-- If we need scrollbar -->
+                        <div class="swiper-scrollbar"></div>
+                        <div class="swiper-pagination"></div>
+                    </div>
+                </div>
+            </div>
+            <div aria-labelledby="cosmetic-tab" class="tab-pane fade" id="cosmetic" role="tabpanel">...</div>
+            <div aria-labelledby="key-tab" class="tab-pane fade" id="key" role="tabpanel">...</div>
+            <div aria-labelledby="studio-tab" class="tab-pane fade" id="studio" role="tabpanel">...</div>
+            <div aria-labelledby="draft-tab" class="tab-pane fade" id="draft" role="tabpanel">...</div>
+        </div>
+    </section>
 </main>
 
 <footer>
@@ -268,5 +694,10 @@
 <script crossorigin="anonymous"
         integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
         src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+<script src="../js/script.js" type="module">
+
+</script>
 </body>
 </html>
