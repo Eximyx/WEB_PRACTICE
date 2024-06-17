@@ -78,6 +78,7 @@
 </header>
 
 <main>
+
     <section class="container mt-3" id="main_slider"
              style="background-image: linear-gradient(to left, rgba(255,255,255,0%), rgba(255,255,255,100%)), url('../img/main/main-image.png'); background-size: cover;background-repeat: no-repeat">
         <div class="row p-0 pb-3">
@@ -266,7 +267,6 @@
             </div>
         </div>
     </section>
-
 
     <section class="container mt-5">
         <h2 class="text-center roboto-bold mb-5">Цены на ремонт</h2>
@@ -649,33 +649,38 @@
 
         <div class="tab-content" id="myTabContent">
             <div aria-labelledby="capital-tab" class="tab-pane fade show active" id="capital" role="tabpanel">
-                <div class="row">
-                    <div class="swiper" id="swiper-works" type="worksSwiper">
-                        <!-- Additional required wrapper -->
+                <div class="container">
+                    <div class="swiper workSwiper" id="swiper_works_1">
                         <div class="swiper-wrapper">
-                            <!-- Slides -->
+                            <div class="swiper-slide h-auto">
+                                <div class="h-auto">
+                                    dsadas
+                                </div>
+                            </div>
+                            <div class="swiper-slide h-auto">
+                                <div style="height:300px;background-image: url('../img/main/builder.png')"></div>
+                            </div>
                         </div>
-                        <div class="swiper-slide">
-                            1
-                        </div>
-                        <div class="swiper-slide">
-                            1
-                        </div>
-                        <div class="swiper-slide">
-                            1
-                        </div>
-                        <div class="swiper-slide">
-                            1
-                        </div>
-                        <!-- If we need pagination -->
-
-                        <!-- If we need navigation buttons -->
                         <div class="swiper-button-prev"></div>
                         <div class="swiper-button-next"></div>
 
                         <!-- If we need scrollbar -->
                         <div class="swiper-scrollbar"></div>
                         <div class="swiper-pagination"></div>
+                    </div>
+                    <div class="swiper-container thumbs">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide h-auto">
+                                <div class="h-auto">
+                                    dsadas
+                                </div>
+                            </div>
+                            <div class="swiper-slide h-auto">
+                                <div class="h-auto">
+                                    dsadas
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -685,6 +690,453 @@
             <div aria-labelledby="draft-tab" class="tab-pane fade" id="draft" role="tabpanel">...</div>
         </div>
     </section>
+
+    <section class="container mt-5" id="markups">
+        <h2 class="text-center roboto-bold mb-5">Акции</h2>
+
+        <div class="swiper" id="swiper-markups">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+                <!-- Slides -->
+                <div class="swiper-slide">
+                    <div class="card border-0 w-auto"
+                         style="background-image:url('../img/markups/newbie-family.png'); background-size: cover">
+                        <div class="card-body align-items-end row justify-content-center">
+                            <div style="min-height: 315px"></div>
+                            <h3 class="card-text text-center">Новоселам</h3>
+                            <p class="card-text text-center col-sm-9 col-md-12 col-lg-9">Специальная скидка для тех, кто
+                                переехал не более
+                                года
+                                назад
+                            </p>
+                            <button class="btn btn-primary col-9 col-md-12 col-lg-9 fs-5 roboto-bold">Получить скидку
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="card border-0 w-auto"
+                         style="background-image:url('../img/markups/newbie-family.png'); background-size: cover">
+                        <div class="card-body align-items-end row justify-content-center">
+                            <div style="min-height: 315px"></div>
+                            <h3 class="card-text text-center">Новоселам</h3>
+                            <p class="card-text text-center col-sm-9 col-md-12 col-lg-9">Специальная скидка для тех, кто
+                                переехал не более
+                                года
+                                назад
+                            </p>
+                            <button class="btn btn-primary col-9 col-md-12 col-lg-9 fs-5 roboto-bold">Получить скидку
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="card border-0 w-auto"
+                         style="background-image:url('../img/markups/newbie-family.png'); background-size: cover">
+                        <div class="card-body align-items-end row justify-content-center">
+                            <div style="min-height: 315px"></div>
+                            <h3 class="card-text text-center">Новоселам</h3>
+                            <p class="card-text text-center col-sm-9 col-md-12 col-lg-9">Специальная скидка для тех, кто
+                                переехал не более
+                                года
+                                назад
+                            </p>
+                            <button class="btn btn-primary col-9 col-md-12 col-lg-9 fs-5 roboto-bold">Получить скидку
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- If we need pagination -->
+
+            <!-- If we need navigation buttons -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+
+            <!-- If we need scrollbar -->
+            <div class="swiper-scrollbar"></div>
+            <div class="swiper-pagination"></div>
+        </div>
+        <div class="row justify-content-center">
+            <button class="w-auto btn px-5 mt-5 btn-outline-primary fs-5 roboto-bold">Все акции</button>
+        </div>
+    </section>
+
+    <section class="container mt-5" id="how-we-works">
+        <div class="row justify-content-center mb-5">
+            <h2 class="text-center roboto-bold">Как мы работаем</h2>
+            <p class="text-center roboto-regular col-xl-9">
+                Вам понятен каждый этап: фиксированные сроки и цены, предоставляем все документы: накладные, гарантии,
+                акты.
+                Вы будете уверены в результате.
+            </p>
+            <div class="row">
+                <div class="row px-5 py-5 border border-1 shadow">
+                    <div class="col-12 row col-md-4 my-2 col-lg justify-content-lg-center">
+                        <div class="col-auto">
+                            <img alt="" class="img-fluid" src="../img/main/cooperation.png">
+                        </div>
+                        <p class="col w-auto col-lg-12 roboto-bold m-0 text-sm-start text-lg-center">Контроль: фотоотчёт
+                            или
+                            видеонаблюдение</p>
+                    </div>
+
+                    <div class="col-12 row col-md-4 my-2 col-lg justify-content-lg-center">
+                        <div class="col-auto">
+                            <img alt="" class="img-fluid" src="../img/main/cooperation.png">
+                        </div>
+                        <p class="col w-auto col-lg-12 roboto-bold m-0 text-sm-start text-lg-center">Контроль: фотоотчёт
+                            или
+                            видеонаблюдение</p>
+                    </div>
+
+                    <div class="col-12 row col-md-4 my-2 col-lg justify-content-lg-center">
+                        <div class="col-auto">
+                            <img alt="" class="img-fluid" src="../img/main/cooperation.png">
+                        </div>
+                        <p class="col w-auto col-lg-12 roboto-bold m-0 text-sm-start text-lg-center">Контроль: фотоотчёт
+                            или
+                            видеонаблюдение</p>
+                    </div>
+
+                    <div class="col-12 row col-md-4 my-2 col-lg justify-content-lg-center">
+                        <div class="col-auto">
+                            <img alt="" class="img-fluid" src="../img/main/cooperation.png">
+                        </div>
+                        <p class="col w-auto col-lg-12 roboto-bold m-0 text-sm-start text-lg-center">Контроль: фотоотчёт
+                            или
+                            видеонаблюдение</p>
+                    </div>
+
+                    <div class="col-12 row col-md-4 my-2 col-lg justify-content-lg-center">
+                        <div class="col-auto">
+                            <img alt="" class="img-fluid" src="../img/main/cooperation.png">
+                        </div>
+                        <p class="col w-auto col-lg-12 roboto-bold m-0 text-sm-start text-lg-center">Контроль: фотоотчёт
+                            или
+                            видеонаблюдение</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="container mt-5" id="show-room">
+        <div class="row justify-content-center mb-5">
+            <h2 class="text-center roboto-bold">Свой склад и шоурум материалов <br> наших партнеров в Москве</h2>
+            <div class="row">
+                <div class="row px-5 py-5 border border-1 shadow">
+                    <div class="col-12 row col-md-4 my-2 col-lg">
+                        <div class="col-auto">
+                            <img alt="" class="img-fluid" src="../img/main/cooperation.png">
+                        </div>
+                        <p class="col w-auto col-lg-12 roboto-bold m-0 text-sm-start">Контроль: фотоотчёт
+                            или
+                            видеонаблюдение</p>
+                    </div>
+                    <div class="col-12 row col-md-4 my-2 col-lg">
+                        <div class="col-auto">
+                            <img alt="" class="img-fluid" src="../img/main/cooperation.png">
+                        </div>
+                        <p class="col w-auto col-lg-12 roboto-bold m-0 text-sm-start">Контроль: фотоотчёт
+                            или
+                            видеонаблюдение</p>
+                    </div>
+                    <div class="col-12 row col-md-4 my-2 col-lg">
+                        <div class="col-auto">
+                            <img alt="" class="img-fluid" src="../img/main/cooperation.png">
+                        </div>
+                        <p class="col w-auto col-lg-12 roboto-bold m-0 text-sm-start">Контроль: фотоотчёт
+                            или
+                            видеонаблюдение</p>
+                    </div>
+                    <div class="col-12 row col-md-4 my-2 col-lg">
+                        <div class="col-auto">
+                            <img alt="" class="img-fluid" src="../img/main/cooperation.png">
+                        </div>
+                        <p class="col w-auto col-lg-12 roboto-bold m-0 text-sm-start">Контроль: фотоотчёт
+                            или
+                            видеонаблюдение</p>
+                    </div>
+                    <div class="col-12 row col-md-4 my-2 col-lg">
+                        <div class="col-auto">
+                            <img alt="" class="img-fluid" src="../img/main/cooperation.png">
+                        </div>
+                        <p class="col w-auto col-lg-12 roboto-bold m-0 text-sm-start">Контроль: фотоотчёт
+                            или
+                            видеонаблюдение</p>
+                    </div>
+                </div>
+                <div class="row justify-content-between mt-3 p-0">
+                    <div class="col-auto p-0">
+                        <img alt="" class="img-fluid" src="../img/showroom/first-image.png">
+                    </div>
+                    <div class="col-auto p-0">
+                        <img alt="" class="img-fluid" src="../img/showroom/second-image.png">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="container mt-5" id="quality-control">
+        <div class="row justify-content-center mb-5">
+            <h2 class="text-center roboto-bold">Многоуровневый контроль качества</h2>
+            <p class="text-center roboto-regular col-xl-9">
+                Ремонтируем квартиры без дефектов благодаря многоуровневому контролю качества
+            </p>
+            <div class="row">
+                <div class="col-lg-4 order-last order-md-first ">
+                    <img alt="" class="img-fluid"
+                         src="../img/quality-control/quality-control.png">
+                </div>
+                <div class="col-12 col-lg-8 row">
+                    <div class="col-12 col-lg-4">
+                        <span class="text-color-primary roboto-bold fs-3">01</span><span
+                            class="roboto-bold text-muted">/05</span>
+                        <h3 class="roboto-bold">Главный инженер</h3>
+                        <p class="pt-3 roboto-regular">Наблюдает за работой в режиме реального времени. Проверяет
+                            поставщиков
+                            материалов и оборудования</p>
+                    </div>
+                    <div class="col-12 col-lg-4">
+                        <span class="text-color-primary roboto-bold fs-3">01</span><span
+                            class="roboto-bold text-muted">/05</span>
+                        <h3 class="roboto-bold">Главный инженер</h3>
+                        <p class="pt-3 roboto-regular">Наблюдает за работой в режиме реального времени. Проверяет
+                            поставщиков
+                            материалов и оборудования</p>
+                    </div>
+                    <div class="col-12 col-lg-4">
+                        <span class="text-color-primary roboto-bold fs-3">01</span><span
+                            class="roboto-bold text-muted">/05</span>
+                        <h3 class="roboto-bold">Главный инженер</h3>
+                        <p class="pt-3 roboto-regular">Наблюдает за работой в режиме реального времени. Проверяет
+                            поставщиков
+                            материалов и оборудования</p>
+                    </div>
+                    <div class="col-12 col-lg-4">
+                        <span class="text-color-primary roboto-bold fs-3">01</span><span
+                            class="roboto-bold text-muted">/05</span>
+                        <h3 class="roboto-bold">Главный инженер</h3>
+                        <p class="pt-3 roboto-regular">Наблюдает за работой в режиме реального времени. Проверяет
+                            поставщиков
+                            материалов и оборудования</p>
+                    </div>
+                    <div class="col-12 col-lg-4">
+                        <span class="text-color-primary roboto-bold fs-3">01</span><span
+                            class="roboto-bold text-muted">/05</span>
+                        <h3 class="roboto-bold">Главный инженер</h3>
+                        <p class="pt-3 roboto-regular">Наблюдает за работой в режиме реального времени. Проверяет
+                            поставщиков
+                            материалов и оборудования</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="container mt-5 d-none d-md-block" id="our-benifits">
+        <div class="row justify-content-center mb-5">
+            <h2 class="text-center roboto-bold mb-5">Наши преимущества</h2>
+            <div class="row">
+                <div class="row px-5 py-5 border border-1 shadow">
+                    <div class="col-12 row col-md-4 my-2 col-lg">
+                        <div class="col-auto">
+                            <img alt="" class="img-fluid" src="../img/main/cooperation.png">
+                        </div>
+                        <p class="col w-auto col-lg-12 roboto-bold m-0">Работа без
+                            предоплаты</p>
+                        <p class="col roboto-regular mt-3">
+                            Мы не берём предоплату. Вы платите за каждый этап работ после подписания акта.
+                        </p>
+                    </div>
+                    <div class="col-12 row col-md-4 my-2 col-lg">
+                        <div class="col-auto">
+                            <img alt="" class="img-fluid" src="../img/main/cooperation.png">
+                        </div>
+                        <p class="col w-auto col-lg-12 roboto-bold m-0">Работа без
+                            предоплаты</p>
+                        <p class="col roboto-regular mt-3">
+                            Мы не берём предоплату. Вы платите за каждый этап работ после подписания акта.
+                        </p>
+                    </div>
+                    <div class="col-12 row col-md-4 my-2 col-lg">
+                        <div class="col-auto">
+                            <img alt="" class="img-fluid" src="../img/main/cooperation.png">
+                        </div>
+                        <p class="col w-auto col-lg-12 roboto-bold m-0">Работа без
+                            предоплаты</p>
+                        <p class="col roboto-regular mt-3">
+                            Мы не берём предоплату. Вы платите за каждый этап работ после подписания акта.
+                        </p>
+                    </div>
+                    <div class="col-12 row col-md-4 my-2 col-lg">
+                        <div class="col-auto">
+                            <img alt="" class="img-fluid" src="../img/main/cooperation.png">
+                        </div>
+                        <p class="col w-auto col-lg-12 roboto-bold m-0">Работа без
+                            предоплаты</p>
+                        <p class="col roboto-regular mt-3">
+                            Мы не берём предоплату. Вы платите за каждый этап работ после подписания акта.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="container mt-5" id="reviews">
+        <div class="row justify-content-center mb-5">
+            <h2 class="text-center roboto-bold mb-5">Отзывы</h2>
+
+            <div class="swiper" id="swiper-reviews">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                    <!-- Slides -->
+
+                    <div class="swiper-slide">
+                        <div class="card">
+                            <video class="card-image cap" controls src="fake.webpm"></video>
+                            <div class="card-body">
+                                <div class="row">
+                                    <p>
+                                        <span class="text-color-primary roboto-bold">КАПИТАЛЬНЫЙ РЕМОНТ</span> 2-х
+                                        комнатная
+                                        квартира
+                                    </p>
+                                </div>
+                                <div class="row">
+                                    <p>
+                                        <i class="text-color-primary fa fa-map-marker-alt"></i> Москва, р-н
+                                        Фили-Давыдково, Малая Филевская улица, 68
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="card">
+                            <video class="card-image cap" controls src="fake.webpm"></video>
+                            <div class="card-body">
+                                <div class="row">
+                                    <p>
+                                        <span class="text-color-primary roboto-bold">КАПИТАЛЬНЫЙ РЕМОНТ</span> 2-х
+                                        комнатная
+                                        квартира
+                                    </p>
+                                </div>
+                                <div class="row">
+                                    <p>
+                                        <i class="text-color-primary fa fa-map-marker-alt"></i> Москва, р-н
+                                        Фили-Давыдково, Малая Филевская улица, 68
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="card">
+                            <video class="card-image cap" controls src="fake.webpm"></video>
+                            <div class="card-body">
+                                <div class="row">
+                                    <p>
+                                        <span class="text-color-primary roboto-bold">КАПИТАЛЬНЫЙ РЕМОНТ</span> 2-х
+                                        комнатная
+                                        квартира
+                                    </p>
+                                </div>
+                                <div class="row">
+                                    <p>
+                                        <i class="text-color-primary fa fa-map-marker-alt"></i> Москва, р-н
+                                        Фили-Давыдково, Малая Филевская улица, 68
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="card">
+                            <video class="card-image cap" controls src="fake.webpm"></video>
+                            <div class="card-body">
+                                <div class="row">
+                                    <p>
+                                        <span class="text-color-primary roboto-bold">КАПИТАЛЬНЫЙ РЕМОНТ</span> 2-х
+                                        комнатная
+                                        квартира
+                                    </p>
+                                </div>
+                                <div class="row">
+                                    <p>
+                                        <i class="text-color-primary fa fa-map-marker-alt"></i> Москва, р-н
+                                        Фили-Давыдково, Малая Филевская улица, 68
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- If we need pagination -->
+
+                <!-- If we need navigation buttons -->
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+
+                <!-- If we need scrollbar -->
+                <div class="swiper-scrollbar"></div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+    </section>
+    <section class="container mt-5" id="youtube">
+        <div class="row justify-content-center mb-5">
+            <h2 class="text-center roboto-bold mb-5">Наш you-tube канал</h2>
+
+            <div class="swiper" id="swiper-youtube">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                    <!-- Slides -->
+
+                    <div class="swiper-slide">
+                        <div class="card">
+                            <video class="img-fluid" controls src="fake.webpm"></video>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="card">
+                            <video class="img-fluid" controls src="fake.webpm"></video>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="card">
+                            <video class="img-fluid" controls src="fake.webpm"></video>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="card">
+                            <video class="img-fluid" controls src="fake.webpm"></video>
+                        </div>
+                    </div>
+                </div>
+                <!-- If we need pagination -->
+
+                <!-- If we need navigation buttons -->
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+
+                <!-- If we need scrollbar -->
+                <div class="swiper-scrollbar"></div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+    </section>
+
+    <section class="container mt-5">
+
+    </section>
+
 </main>
 
 <footer>
