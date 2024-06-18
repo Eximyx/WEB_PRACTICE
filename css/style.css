@@ -199,6 +199,12 @@
     background-color: var(--color-primary) !important;
 }
 
+.bg-color-secondary {
+    --bs-bg-opacity: 1;
+    color: white !important;
+    background-color: var(--color-secondary) !important;
+}
+
 .border-color-primary {
     border-color: var(--color-primary) !important;
 }
@@ -267,4 +273,71 @@
     .main-title {
         font-size: 60px !important;
     }
+}
+
+.faq-question {
+    cursor: pointer;
+    background: #f8f9fa;
+    border: 1px solid #dee2e6;
+    padding: 15px;
+    font-weight: 400;
+    font-family: 'Roboto', serif;
+    margin-bottom: 5px;
+}
+
+.faq-item {
+    margin-bottom: 5px;
+}
+
+.faq-answer {
+    display: none;
+    padding: 15px;
+    border: 1px solid #dee2e6;
+    border-top: none;
+}
+
+.footer {
+    background-color: #2d3748;
+    color: #fff;
+    padding: 40px 0;
+}
+
+.footer .footer-title {
+    color: #99cc33;
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.footer a {
+    color: #99cc33;
+    text-decoration: none;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+}
+
+.footer .payment-icons img {
+    height: 24px;
+    margin-right: 10px;
+}
+
+.footer .social-icons a {
+    color: #fff;
+    margin-right: 10px;
+}
+
+.footer .bottom-bar {
+    border-top: 1px solid #fff;
+    padding-top: 10px;
+    margin-top: 20px;
+}
+
+.footer .bottom-bar a {
+    color: #99cc33;
+    text-decoration: none;
+}
+
+.footer .bottom-bar a:hover {
+    text-decoration: underline;
 }

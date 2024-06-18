@@ -208,6 +208,20 @@ new Swiper('#swiper-youtube', {
 
 
 $('document').ready(() => {
+    $('.faq-question').on('click', function () {
+        var answer = $(this).next('.faq-answer');
+        
+        if (answer.is(':visible')) {
+            answer.slideUp();
+            $(this).removeClass('text-color-primary');
+            $(this).find('i').removeClass('fa-minus').addClass('fa-plus');
+        } else {
+            // $('.faq-answer').slideUp();
+            $(this).addClass('text-color-primary');
+            $(this).find('i').removeClass('fa-plus').addClass('fa-minus');
+            answer.slideDown();
+        }
+    });
 
     $('.workSwiper').each(
         (key, value) => {
