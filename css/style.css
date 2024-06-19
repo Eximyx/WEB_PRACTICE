@@ -309,7 +309,7 @@
 }
 
 .footer a {
-    color: #99cc33;
+    /*color: #99cc33;*/
     text-decoration: none;
 }
 
@@ -340,4 +340,19 @@
 
 .footer .bottom-bar a:hover {
     text-decoration: underline;
+}
+
+@media (max-width: 767px) {
+    .footer .row > div {
+        margin-bottom: 20px;
+        text-align: center;
+    }
+
+    .footer .social-icons {
+        text-align: center;
+    }
+
+    .footer .bottom-bar {
+        text-align: center;
+    }
 }

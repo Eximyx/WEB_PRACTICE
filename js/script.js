@@ -210,7 +210,7 @@ new Swiper('#swiper-youtube', {
 $('document').ready(() => {
     $('.faq-question').on('click', function () {
         var answer = $(this).next('.faq-answer');
-        
+
         if (answer.is(':visible')) {
             answer.slideUp();
             $(this).removeClass('text-color-primary');
@@ -240,7 +240,7 @@ $('document').ready(() => {
 
             new Swiper(value, {
                 // Optional parameters
-                direction: 'vertical',
+                direction: 'horizontal',
                 loop: true,
 
                 // If we need pagination
