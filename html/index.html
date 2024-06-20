@@ -28,15 +28,19 @@
     />
 </head>
 <body>
-
 <header>
     <nav class="navbar navbar-expand-md navbar-light bg">
         <div class="container justify-content-between">
-            <a class="d-none d-md-block navbar-brand logo saira-stencil-one py-0 mx-0" href="#">MaxProff</a>
-            <button class="d-block d-md-none btn btn-primary" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight" type="button">
+            <a class="d-none d-md-block navbar-brand logo saira-stencil-one py-0 mx-0" href="#"><span
+                    class="text-color-secondary">M</span>ax<span
+                    class="text-color-primary">P</span>roff</a>
+            <button aria-controls="offcanvasRight" class="d-block d-md-none btn btn-primary"
+                    data-bs-target="#offcanvasRight" data-bs-toggle="offcanvas" type="button">
                 <i class="fa fa-bars"></i>
             </button>
-            <a class="d-md-none navbar-brand logo saira-stencil-one py-0 px-0" href="#">MaxProff</a>
+            <a class="d-md-none navbar-brand logo saira-stencil-one py-0 px-0" href="#"><span
+                    class="text-color-secondary">M</span>ax<span
+                    class="text-color-primary">P</span>roff</a>
             <div class="collapse navbar-collapse align-items-center justify-content-center"
                  id="navbarSupportedContent">
                 <ul class="navbar-nav mb-2 mb-lg-0 d-flex justify-content-between">
@@ -70,13 +74,13 @@
                 </div>
                 <button class="btn btn-outline-success" type="submit">Заказать звонок</button>
             </div>
-            <btn class="d-xl-none btn btn-primary" href="#"><i class="fa fa-phone"></i></btn>
+            <button class="d-xl-none btn btn-primary" href="#"><i class="fa fa-phone"></i></button>
         </div>
     </nav>
 
-    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+    <div aria-labelledby="offcanvasRightLabel" class="offcanvas offcanvas-end" id="offcanvasRight" tabindex="-1">
         <div class="offcanvas-header">
-            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            <button aria-label="Close" class="btn-close text-reset" data-bs-dismiss="offcanvas" type="button"></button>
         </div>
         <div class="offcanvas-body px-5">
             <button class="btn btn-primary col-12">Заказать звонок</button>
@@ -84,7 +88,7 @@
             <button class="btn btn-outline-primary col-12">Заказать звонок</button>
             <ul class="sidebar nav navbar-nav">
                 <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown" href="#">SERVICES</a>
+                    <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button">SERVICES</a>
                     <ul class="dropdown-menu">
                         <li><a class="dropdown-item" href="#">Delivery</a></li>
                         <li>
@@ -114,7 +118,8 @@
             <div class="row p-0 m-0 my-2 my-md-3">
                 <div class="row">
                     <i class="col-auto fs-2 fa fa-phone p-0"></i>
-                    <a class="col-auto p-0 roboto-bold nav-link text-black" href="tel:+72332222222">+7 (233) 222-22-22</a>
+                    <a class="col-auto p-0 roboto-bold nav-link text-black" href="tel:+72332222222">+7 (233)
+                        222-22-22</a>
                 </div>
                 <p class="p-0 m-0">08:00 - 22:00,
                     без
@@ -174,7 +179,7 @@
                 </div>
             </div>
             <div class="col">
-                <form class="row justify-content-center bg-light" action="javascript:void(0)">
+                <form action="javascript:void(0)" class="row justify-content-center bg-light">
                     <div class="row p-0  pb-3 px-lg-3 py-3 py-lg-3 m-0 ">
                         <h4 class="text-right my-2 roboto-bold">Рассчитайте стоимость ремонта</h4>
                     </div>
@@ -187,7 +192,7 @@
                                 <label class="form-check-label">
                                     <input checked class="form-check-input" name="kind_of_work"
                                            type="radio"
-                                           value="1" >
+                                           value="1">
                                     Косметический
                                 </label>
                             </div>
@@ -195,7 +200,7 @@
                                 <label class="form-check-label">
                                     <input checked class="form-check-input" name="kind_of_work"
                                            type="radio"
-                                           value="2" >
+                                           value="2">
                                     Под ключ
                                 </label>
                             </div>
@@ -204,14 +209,14 @@
                             <div class="w-auto">
                                 <label class="form-check-label">
                                     <input checked class="form-check-input" name="kind_of_work" type="radio"
-                                           value="3" >
+                                           value="3">
                                     Капитальный
                                 </label>
                             </div>
                             <div class="w-auto">
                                 <label class="form-check-label">
-                                    <input checked class="form-check-input" name="kind_of_work" type="radio"
-                                           value="4" required>
+                                    <input checked class="form-check-input" name="kind_of_work" required
+                                           type="radio" value="4">
                                     Дизайнерский
                                 </label>
                             </div>
@@ -225,7 +230,7 @@
                             <label class="form-check-label">
                                 <input checked class="form-check-input" name="type_of_estate"
                                        type="radio"
-                                       value="1" >
+                                       value="1">
                                 Новостройка
                             </label>
                         </div>
@@ -233,7 +238,7 @@
                             <label class="form-check-label">
                                 <input checked class="form-check-input" name="type_of_estate"
                                        type="radio"
-                                       value="2" >
+                                       value="2">
                                 Под ключ
                             </label>
                         </div>
@@ -246,7 +251,7 @@
                             <label class="form-check-label">
                                 <input checked class="form-check-input" name="rooms"
                                        type="radio"
-                                       value="1" >
+                                       value="1">
                                 1
                             </label>
                         </div>
@@ -279,8 +284,8 @@
                         <label class="form-label roboto-medium" for="square">Площадь, м2:</label>
                         <div class="col-12 px-2 p-0">
                             <div class="row px-2">
-                                <input class="col form-range" id="square" type="range">
-                                <p class="col-1">35</p>
+                                <input class="col form-range" id="square" max="100" min="0" type="range" value="35">
+                                <p class="col-1" id="square-value">35</p>
                             </div>
                         </div>
                     </div>
@@ -297,11 +302,11 @@
                     <div class="row p-0 px-lg-3 m-0 py-3 py-lg-3 border-bottom justify-content-between">
                         <label class="form-label roboto-medium" for="phone">Введите номер телефона:</label>
                         <div class="col-12 col-xl-7 py-3 py-md-2">
-                            <input class="form-control" id="phone"
-                                   name="phone"
-                                   pattern="\+7\s?[\(]{0,1}9[0-9]{2}[\)]{0,1}\s?\d{3}[-]{0,1}\d{2}[-]{0,1}\d{2}"
-                                   placeholder="+7 (XXX) XXX-XX-XX"
-                                   type="tel" required>
+                            <input class="form-control" id="phone" name="phone" placeholder="+7 (XXX) XXX-XX-XX"
+                                   required type="tel">
+                            <div class="invalid-feedback" id="phone-error" style="display: none;">
+                                Пожалуйста, введите правильный номер телефона.
+                            </div>
                         </div>
                         <div class="col py-3 py-md-2">
                             <button class="btn w-100 py-lg-2 btn-primary"
@@ -698,40 +703,34 @@
             <div aria-labelledby="capital-tab" class="tab-pane fade show active" id="capital" role="tabpanel">
                 <div class="container">
                     <div class="row">
-                        <div class="col-12 col-lg-4 swiper-container thumbs">
-                            <div class="swiper-wrapper">
-                                <div class="swiper-slide h-auto">
-                                    <div class="h-auto">
-                                        dsadas
-                                    </div>
-                                </div>
-                                <div class="swiper-slide h-auto">
-                                    <div class="h-auto">
-                                        dsadas
-                                    </div>
-                                </div>
-                            </div>
+                        <div class="col-2 left-column">
+                            <img alt="Thumbnail 1" class="img-thumbnail" src="../img/main/main-image.png">
+                            <img alt="Thumbnail 2" class="img-thumbnail" src="../img/main/main-image.png">
+                            <img alt="Thumbnail 3" class="img-thumbnail" src="../img/main/main-image.png">
                         </div>
-                        <div class="col-12 col-lg-8 swiper workSwiper" id="swiper_works_1">
-                            <div class="swiper-wrapper">
-                                <div class="col col-lg-12 swiper-slide h-auto swiper-slide h-auto">
-                                    <div class="h-auto">
-                                        dsadas
-                                    </div>
-                                </div>
-                                <div class="col col-lg-12 swiper-slide h-auto">
-                                    <div style="height:300px;background-image: url('../img/main/builder.png')"></div>
-                                </div>
-                            </div>
-
-                            <!-- If we need scrollbar -->
-                            <div class="swiper-scrollbar"></div>
-
-                            <div class="swiper-button-prev"></div>
-                            <div class="swiper-button-next"></div>
-<!--                            <div class="swiper-pagination"></div>-->
+                        <div class="col-6">
+                            <img alt="Main Image" class="img-fluid main-image" src="../img/main/main-image.png">
                         </div>
-
+                        <div class="col-4 details">
+                            <p><i class="text-color-primary fa fa-dollar"></i> Сумма:<strong> 272 250 руб.</strong></p>
+                            <p><i class="text-color-primary fa fa-triangle-circle-square"></i> Площадь:<strong>43
+                                м2</strong></p>
+                            <p><i class="text-color-primary fa fa-calendar-times"></i> Срок:<strong> 90 дней</strong>
+                            </p>
+                            <p><i class="text-color-primary fa fa-cart-flatbed"></i> Комнат:<strong> 3</strong></p>
+                            <p><i class="text-color-primary fa fa-map-marker"></i> Адрес:<strong> Кулика 18</strong></p>
+                            <p><i class="text-color-primary fa fa-check-to-slot"></i> Перечень работ:</p>
+                            <ul>
+                                <li>Штукатурка стен по маякам</li>
+                                <li>Грунтовка стен и потолка</li>
+                                <li>Монтаж натяжных потолков</li>
+                                <li>Шпаклёвка стен под обои</li>
+                                <li>Окраска стен</li>
+                                <li>Укладка плитки в с/у</li>
+                                <li>Прокладка электрики</li>
+                                <li>Установка плинтусов и откосов</li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -1326,21 +1325,26 @@
         </div>
     </div>
     <!-- Back to top button -->
-    <button  type="button" data-mdb-button-init data-mdb-ripple-init class="btn btn-danger btn-floating btn-lg" id="btn-back-to-top">
+    <button class="btn btn-danger btn-floating btn-lg" data-mdb-button-init data-mdb-ripple-init id="btn-back-to-top"
+            type="button">
         <i class="fas fa-arrow-up"></i>
     </button>
-
 </main>
 
 <footer class="footer">
     <div class="container">
         <div class="row justify-content-center">
             <div class="col-md-3 col-12">
-                <h5 class="footer-title saira-stencil-one-regular">MaxProff</h5>
+                <h5 class="footer-title logo text-white saira-stencil-one-regular"><span
+                        class="text-color-primary">M</span>ax<span
+                        class="text-color-primary">P</span>roff</h5>
                 <p>Любая форма оплаты</p>
                 <div class="payment-icons align-bottom h-auto">
-                    <i class="fa-cc-mastercard"></i>
-                    <i class="fa-cc-visa"></i>
+                    <img alt="" src="../img/payment/alphabank.png">
+                    <img alt="" src="../img/payment/mastercard.png">
+                    <img alt="" src="../img/payment/sberbank.png">
+                    <img alt="" src="../img/payment/visa.png">
+                    <img alt="" src="../img/payment/wallet.png">
                 </div>
             </div>
             <div class="col-md-3 col-12">
@@ -1365,27 +1369,28 @@
                 </ul>
             </div>
             <div class="col-md-3 col-12">
-                <div class="row p-0 m-0 my-2 my-md-3">
+                <div class="row p-0 m-0 my-2 my-md-3 justify-content-center justify-md-content-start align-items-center">
                     <i class="text-color-primary col-auto fs-2 fa fa-phone"></i>
-                    <p class="col-auto p-0 m-0" href="tel:+72332222222">+7 (233) 222-22-22</a><br>08:00 - 22:00,
+                    <p class="col-auto p-0 m-0"><a class="text-white" href="tel:+72332222222">+7 (233)
+                        222-22-22</a><br>08:00 - 22:00,
                         без
                         выходных <br>
                         <a class="text-center text-color-primary text-decoration-underline" href="#">Заказать звонок</a>
                     </p>
                 </div>
-                <div class="row p-0 m-0 my-2 my-md-3 align-items-center">
+                <div class="row p-0 m-0 my-2 my-md-3 justify-content-center justify-md-content-start align-items-center">
                     <i class="text-color-primary col-auto fs-2 fa fa-envelope"></i>
                     <a class="col-auto text-white p-0 m-0" href="mailto:info@example.com">Электронная почта @</a>
                 </div>
-                <div class="row p-0 m-0 my-2 my-md-3 align-items-center">
-                    <i class="text-color-primary col-auto fs-2 fa fa-envelope"></i>
-                    <a class="col-auto text-white p-0 m-0" href="mailto:info@example.com">Электронная почта @</a>
+                <div class="row p-0 m-0 my-2 my-md-3 justify-content-center justify-md-content-start ">
+                    <i class="text-color-primary col-auto fs-2 fa fa-map-marker"></i>
+                    <a class="col-auto text-white p-0 m-0" href="mailto:info@example.com">Адрес</a>
                 </div>
             </div>
         </div>
         <div class="row justify-content-around mt-4 bottom-bar text-secondary">
             <div class="col-md-auto col-12 text-center text-md-left">
-                <p>&copy; 2021 «MaxProff»   <a class="text-white text-decoration-underline" href="#"> Правовая
+                <p>&copy; 2021 «MaxProff» <a class="text-white text-decoration-underline" href="#"> Правовая
                     информация</a></p>
             </div>
             <div class="col-md-auto col-12 text-center text-md-right text-white social-icons">

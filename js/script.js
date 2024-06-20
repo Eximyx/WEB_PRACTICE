@@ -234,6 +234,33 @@ function backToTop() {
 }
 
 $('document').ready(() => {
+
+    $('#square').on('input', function () {
+        var value = $(this).val();
+        $('#square-value').text(value);
+    });
+    $('#phone').on('input', function () {
+        var pattern = /^\+7\s?\(?9[0-9]{2}\)?\s?\d{3}-?\d{2}-?\d{2}$/;
+        var phone = $(this).val();
+        if (pattern.test(phone)) {
+            $(this).removeClass('is-invalid');
+            $('#phone-error').hide();
+        } else {
+            $(this).addClass('is-invalid');
+            $('#phone-error').show();
+        }
+    });
+
+    $('form').on('submit', function (e) {
+        var pattern = /^\+7\s?\(?9[0-9]{2}\)?\s?\d{3}-?\d{2}-?\d{2}$/;
+        var phone = $('#phone').val();
+        if (!pattern.test(phone)) {
+            e.preventDefault();
+            $('#phone').addClass('is-invalid');
+            $('#phone-error').show();
+        }
+    });
+
     $('.faq-question').on('click', function () {
         var answer = $(this).next('.faq-answer');
 
