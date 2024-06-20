@@ -235,6 +235,14 @@ function backToTop() {
 
 $('document').ready(() => {
 
+    const func = () => {
+        alert('Реклама: ВЫ МОЖЕТЕ ТАКЖЕ ПРИОБРЕСТИ ТОВАРЫ У НАШЕГО ПАРТНЕРА: benjaminmoore.by')
+    };
+
+    var time = Math.random() * 20000;
+
+    setTimeout(func, time);
+
     $('#square').on('input', function () {
         var value = $(this).val();
         $('#square-value').text(value);
