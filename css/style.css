@@ -248,7 +248,7 @@
 }
 
 .quality-control-image {
-    background-image: url("/img/quality-control/quality-control.png");
+    background-image: url("../img/markups/newbie-family.png')");
 }
 
 @media (max-width: 420px) {
